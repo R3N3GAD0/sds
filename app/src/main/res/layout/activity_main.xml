@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/menos"
+            android:text="-"
+            android:onClick="A"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/cafe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Café"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/cafecleite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Café com Leite"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <RadioButton
+                    android:id="@+id/cappuccino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cappuccino"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/mais"
+            android:text="+"
+            android:onClick="B"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Pedido: "
+
+        />
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text=""
+
+        />
+
+    <TextView
+        android:id="@+id/precou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço Unitário: "
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:id="@+id/preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço Total: "
+        android:textSize="20sp"
+
+        />
+    <Button
+        android:id="@+id/pedir"
+        android:text="Realizar pedido"
+        android:onClick="limpar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+</LinearLayout>
